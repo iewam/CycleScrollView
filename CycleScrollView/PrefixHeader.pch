@@ -1,0 +1,26 @@
+//
+//  PrefixHeader.pch
+//  CycleScrollView
+//
+//  Created by caifeng on 2017/2/10.
+//  Copyright © 2017年 facaishu. All rights reserved.
+//
+
+
+#ifdef __OBJC__
+
+// Format Log
+#ifdef DEBUG
+#define NSLog(fmt, ...) NSLog((@"%s [Line %d]\t" fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+#else
+#define NSLog(...)
+#endif
+
+
+
+#define mScreenWidth [UIScreen mainScreen].bounds.size.width
+#define mScreenHeight [UIScreen mainScreen].bounds.size.height
+
+
+
+#endif
